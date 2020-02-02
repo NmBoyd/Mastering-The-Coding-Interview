@@ -3,14 +3,14 @@
 
     Hash table is a data structure that maps keys to values for highly efficient lookup.
     In a very simple implementation of a hash table, the hash table has an underlying array
-    and hash function. When you want to insert and objct and its key, the hash function maps
+    and hash function. When you want to insert and obejct and its key, the hash function maps
     the key to an integer, which indicates the index of the array. The object is then stored
     at that index. (This requires all possible keys to be unique, or data will be overwritten)
 
     Instead of making a large array and storing objcts at index [hash(key)], we can make the
     array smaller and store objects in a linked list at index [hash(key) % array_length].
     To get the object with a particular key, we must search the linked list for this key. Or,
-    we can implement the hash table with a binar search tree. We can then guarantee an O(log n)
+    we can implement the hash table with a binary search tree. We can then guarantee an O(log n)
     lookup time, since we can keep the tree balanced.
  */
 
