@@ -1,7 +1,8 @@
 #include <iostream>
 #include <cstdlib>
+#include "linked_lists.cpp"
 
-#define DEFAULT_SIZE 10
+#define DEFAULT_SIZE 100
 
 template <class X>
 class stack
@@ -69,3 +70,37 @@ class stack
     int top;
     int capacity;
 };
+
+// //////////////////////////////////////////////
+
+// Linked list stack
+// template<class T>
+// class Stack {
+//   public:
+//     Stack()
+//     {
+//     }
+//     ~Stack() {
+//       delete top;
+//     }
+//     T pop() {
+//       if (top != nullptr) {
+//         T item = top->getData();
+//       }
+//     }
+
+//     void push(T item) {
+//       std::cout<<"adding item" << std::endl;
+//       Node<T>* t = new Node<T>(item);
+//       t->setNext(top);
+//       top = t;
+//     }
+
+//     T peek(){
+//       std::cout << "Getting data" <<std::endl;
+//       return top->getData();
+//     }
+
+//   private:
+//     Node<T>* top;
+// };

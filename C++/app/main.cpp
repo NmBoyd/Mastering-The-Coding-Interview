@@ -57,7 +57,11 @@ int main() {
   std::cout<< new_stack.peek() << std::endl;
   std::cout<< string_stack.peek() << std::endl;
 
-  
+  // Stack<std::string> node_stack;
+  // node_stack.push("AB");
+  // node_stack.push("A");
+  // std::cout << node_stack.peek() << std::endl;
+  // std::cout <<"finished" <<std::endl;
   // Bring in the dummy class from the example source,
   // just to show that it is accessible from main.cpp.
   Dummy d = Dummy();
